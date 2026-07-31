@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/helium-commander/
+name: helium-commander
+description: >-
+  A command line interface and service wrapper for the (legacy) Helium IoT
+  REST API. First-party tool from Nova Labs; archived read-only following the
+  network's migration to Solana. Retained here as the historical CLI surface.
+version: 0.15.7
+official: true
+status: archived
+repo: https://github.com/novalabsxyz/helium-commander
+package: packages/nova-labs-packages.yml
+install:
+- method: pip
+  command: pip install helium-commander
+binary: helium
+resources:
+- sensor
+- element
+- label
+- organization
+- user
+- timeseries
+notes: >-
+  Exposed Helium platform resources (sensors, elements, labels, organizations)
+  and timeseries data via the dev.helium.com REST API. Command groups mirror
+  the platform's resource model. No verbatim published command reference was
+  captured beyond the resource surface described in the package/repo.

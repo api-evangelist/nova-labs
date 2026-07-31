@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of Nova Labs / Helium public hosts
+hosts:
+- host: https://www.helium.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://docs.helium.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+result: none
+note: >-
+  No .well-known discovery documents are published on the Helium website or
+  docs host. Absence recorded as valid data. No security.txt, so no SecurityTxt
+  or VulnerabilityDisclosure pointer is emitted.

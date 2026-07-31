@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/helium/proto/tree/master/src/service
+description: >-
+  Helium's network protocol surface is defined as gRPC/Protobuf services in the
+  helium/proto repository (proto3). These are the current, actively-maintained
+  service contracts for the LoRaWAN IoT and Mobile networks running on Solana.
+  Two representative config services are captured verbatim here; the full set of
+  service definitions lives in the upstream repo.
+repo: https://github.com/helium/proto
+services:
+- file: nova-labs-iot-config.proto
+  source: https://raw.githubusercontent.com/helium/proto/master/src/service/iot_config.proto
+  package: helium.iot_config
+  summary: IoT (LoRaWAN) network configuration service — orgs, routes, gateways, regions.
+- file: nova-labs-mobile-config.proto
+  source: https://raw.githubusercontent.com/helium/proto/master/src/service/mobile_config.proto
+  package: helium.mobile_config
+  summary: Mobile network configuration service — carriers, gateways, authorization.
+other_services:
+- chain_rewardable_entities.proto
+- downlink.proto
+- follower.proto
+- multi_buy.proto
+- packet_router.proto
+- packet_verifier.proto
+- poc_entropy.proto
+- poc_lora.proto
+- poc_mobile.proto
+- router.proto
+- state_channel.proto
+- sub_dao.proto
+- transaction.proto

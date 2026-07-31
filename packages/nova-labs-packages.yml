@@ -1,0 +1,47 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/novalabsxyz
+note: >-
+  First-party Helium/Nova Labs client libraries and crates verified on their
+  public registries. The legacy Helium IoT REST API client libraries
+  (helium-python, helium-ruby, helium-java, helium-commander) are archived
+  read-only on GitHub following the network's migration to Solana, but remain
+  published on their registries. The Rust crates (helium-crypto, helium-proto)
+  back the current network protocol surface and are actively maintained.
+packages:
+- language: python
+  registry: pypi
+  name: helium-python
+  version: 0.9.0
+  url: https://pypi.org/project/helium-python/
+  install: pip install helium-python
+  repo: https://github.com/helium/helium-python
+  official: true
+  status: archived
+- language: python
+  registry: pypi
+  name: helium-commander
+  version: 0.15.7
+  url: https://pypi.org/project/helium-commander/
+  install: pip install helium-commander
+  repo: https://github.com/novalabsxyz/helium-commander
+  official: true
+  status: archived
+- language: ruby
+  registry: rubygems
+  name: helium-ruby
+  version: 0.26.0
+  url: https://rubygems.org/gems/helium-ruby
+  install: gem install helium-ruby
+  repo: https://github.com/helium/helium-ruby
+  official: true
+  status: archived
+- language: rust
+  registry: crates.io
+  name: helium-crypto
+  version: 0.11.0
+  url: https://crates.io/crates/helium-crypto
+  install: cargo add helium-crypto
+  repo: https://github.com/helium/helium-crypto-rs
+  official: true
+  status: active

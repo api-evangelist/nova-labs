@@ -1,8 +1,32 @@
 aid: nova-labs
 name: Nova Labs
-description: Nova Labs is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Nova Labs, Inc. is the company behind the Helium Network, a decentralized
+  wireless network that replaces traditional carrier infrastructure with
+  community-hosted Hotspots and is coordinated on the Solana blockchain and
+  incentivized with the HNT token. Helium operates two networks: a global
+  LoRaWAN network for low-power IoT devices and a cellular/Wi-Fi offload
+  network for mobile connectivity (Helium Mobile). Nova Labs open-sources the
+  network's protocol surface as gRPC/Protobuf service definitions (the
+  helium/proto config, router, and proof-of-coverage services) and publishes
+  a set of first-party client libraries, a command-line tool, and Rust crates
+  for cryptography and protobuf types. This profile was surfaced as an a16z
+  portfolio company and enriched from Nova Labs' public developer surface;
+  much of the legacy Helium IoT REST API tooling is archived following the
+  network's migration to Solana.
 url: https://raw.githubusercontent.com/api-evangelist/nova-labs/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/102692623?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +35,51 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Wireless
+- IoT
+- LoRaWAN
+- Connectivity
+- Blockchain
+- DePIN
+- gRPC
+- Telecommunications
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://www.helium.com/
+- type: Documentation
+  url: https://docs.helium.com/
+- type: DeveloperPortal
+  url: https://docs.helium.com/
+- type: Blog
+  url: https://www.helium.com/blog
+- type: GitHubOrganization
+  url: https://github.com/novalabsxyz
+- type: Protobuf
+  name: Helium gRPC/Protobuf service definitions
+  url: grpc/nova-labs-iot-config.proto
+- type: Packages
+  url: packages/nova-labs-packages.yml
+- type: SDKs
+  url: packages/nova-labs-packages.yml
+- type: CLI
+  url: cli/nova-labs-cli.yml
+- type: LLMsTxt
+  url: llms/nova-labs-llms.txt
+- type: DomainSecurity
+  url: security/nova-labs-domain-security.yml
+- type: WellKnown
+  url: well-known/nova-labs-well-known.yml
